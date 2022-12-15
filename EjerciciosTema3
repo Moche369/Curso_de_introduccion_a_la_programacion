@@ -1,0 +1,35 @@
+public class Main {
+
+    public static void main(String[] args){
+        //Creamos la funcion main con los tres parametros que seran numeros que
+        //se sumaran entre si
+        suma(10,11,25);
+        //Creamos un objeto miCoche en el main y añadirle una puerta
+        Coche miCoche = new Coche();
+        System.out.println(miCoche.puertas);
+        miCoche.incrementarPuertas();
+        System.out.println(miCoche.puertas);
+    }
+    //Primera parte:
+    //Crear una función con tres parámetros que sean números que se suman entre sí.
+
+    public static void suma(int a, int b, int c) {
+        int resultado;
+        resultado = a + b + c;
+
+        //hare que se impriman en la consola con println
+        System.out.println(resultado);
+
+
+    }
+}
+//Segunda parte:
+//Crear una clase coche.
+class Coche {
+    //Dentro de la clase coche, una variable numérica que almacene el número de puertas que tiene.
+    public int puertas = 3;
+    //Una función que incremente el número de puertas que tiene el coche.
+    public void incrementarPuertas(){
+        this.puertas++;
+    }
+}
